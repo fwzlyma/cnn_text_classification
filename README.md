@@ -7,6 +7,7 @@ It is slightly simplified implementation of Kim's [Convolutional Neural Networks
 - Python 3
 - Tensorflow > 0.12
 - Numpy
+- conda create -n cnnTextClassification python==3.6 tensorflow-gpu
 
 ## Training
 
@@ -56,7 +57,7 @@ Train:
 ## Evaluating
 
 ```bash
-./eval.py --eval_train --checkpoint_dir="./runs/1459637919/checkpoints/"
+eval.py --eval_train --checkpoint_dir="runs/1645769682/checkpoints/"
 ```
 
 Replace the checkpoint dir with the output from the training. To use your own data, change the `eval.py` script to load your data.
